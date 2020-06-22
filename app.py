@@ -10,6 +10,7 @@ app.config["MONGO_URI"] = os.getenv('mongodb+srv://root:r00tUser@myfirstcluster-
 
 mongo = PyMongo(app)
 
+
 @app.route('/')
 @app.route('/get_tasks')
 def get_tasks():
